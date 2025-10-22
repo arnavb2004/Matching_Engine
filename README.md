@@ -1,5 +1,6 @@
 # Matching_Engine
-## Overview
+
+### OVERVIEW
 This is a simple stock matching engine implemented in C++. It simulates the core functionality of a trading system where buy and sell orders are matched based on price and time priority.
 
 The engine supports:
@@ -14,7 +15,7 @@ The engine supports:
 
 NOTE: The stock symbols currently are arbitary strings with no validation with real stock system.
 
-## FEATURES 
+### FEATURES 
 
 1. Add a new order (buy/sell) with specified quantity and price
 
@@ -24,7 +25,7 @@ NOTE: The stock symbols currently are arbitary strings with no validation with r
 
 4. Basic reporting of executed trades and order book state
 
-## USAGE
+### USAGE
 
 1. Once you run the code in matching_engine.cpp (the main file), you will be shown the syntax in which the code expects the input.
 
@@ -38,7 +39,7 @@ NOTE: The stock symbols currently are arbitary strings with no validation with r
 
 6. You can also use the benchmark command to randomly generate 'N' orders and see the throughput for the same. Throughput found for 100k orders was 343557.61 orders/sec and for 10 million orders was 279256.90 orders/sec.
 
-## FUTURE IMPROVEMENTS
+### FUTURE IMPROVEMENTS
 
 1. Validate stock symbols against a predefined list.
 
@@ -48,6 +49,6 @@ NOTE: The stock symbols currently are arbitary strings with no validation with r
 
 4. Web interface for easier access.
 
-## LICENSE 
+### LICENSE 
 
 This project is licensed under the MIT License.
