@@ -1,4 +1,5 @@
 #include "OrderBook.hpp"
+#include "benchmark.hpp"
 #include <unordered_map>
 #include <iostream>
 #include <chrono>
@@ -10,7 +11,7 @@ int main() {
     string cmd;
     cout << "Matching Engine CLI\nCommands:\n"
          << "SUBMIT <user> <symbol> <BUY|SELL> <price> <qty>\n"
-         << "CANCEL <order_id>\nPRINT <symbol>\nEXIT\n";
+         << "CANCEL <order_id>\nPRINT <symbol>\nBENCHMARK <number of orders to randomly test upon>\nEXIT\n";
 
     auto start = chrono::high_resolution_clock::now();
     int total_orders = 0;
@@ -41,6 +42,11 @@ int main() {
             if (market.find(sym) == market.end()) { cout << "Empty\n"; continue; }
             market[sym].printTop();
         } else if (cmd == "EXIT") break;
+        else if(cmd=="BENCHMARK") {
+            int N; cin >> N;
+            Benchmark::runBenchmark(market, N);
+            total_orders += N;
+        }
         else cout << "Unknown command\n";
     }
 
