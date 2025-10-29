@@ -37,7 +37,7 @@ NOTE: The stock symbols currently are arbitary strings with no validation with r
 
 5. Once you exit, it shows the number of orders performed in the given duration.
 
-6. You can also use the benchmark command to randomly generate 'N' orders and see the throughput for the same. Throughput found for 100k orders was 343557.61 orders/sec and for 10 million orders was 279256.90 orders/sec.
+6. You can also use the benchmark command to randomly generate 'N' orders and see the throughput for the same. Throughput found for 100k orders was 896563.47 orders/sec and for 10 million orders was 876252.32 orders/sec.
 
 ### FUTURE IMPROVEMENTS
 
